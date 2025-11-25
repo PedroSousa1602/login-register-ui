@@ -72,5 +72,5 @@ input[type="submit"]:hover, button:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(0,255,255,0.5);
     border-style: dashed;
-    border-color: rgba(0, 255, 255, 0.329);
+    border-color: rgba(0, 255, 255, 0.288);
 }
