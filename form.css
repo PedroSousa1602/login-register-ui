@@ -22,6 +22,7 @@ form {
     font-weight: 700;
     font-style: normal;
     text-align: center;
+    color: white;
     backdrop-filter: blur(10px);
 }
 
@@ -30,8 +31,8 @@ input[type="text"], input[type="email"], input[type="password"] {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    background-color: #96cefca4;
-    border: 1px solid #96cefca4;
+    background-color: #96cefcbb;
+    border: 1px solid #96cefcbb;
     border: none;
     border-radius: 40px;
     box-sizing: border-box;
@@ -39,11 +40,20 @@ input[type="text"], input[type="email"], input[type="password"] {
     font-weight: 400;
     font-style: normal;
     text-align: center;
-    
+    color: white;
 }
-input[type="submit"] {
+
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+    border: none;
+    border-bottom: 2px solid #96cefc;
+    outline: 0;
+    text-align: center;
+}
+
+input[type="submit"], button {
     width: 100%;
-    background-color: #75d1fca1;
+    background-color: #00c3ffa1;
     color: rgb(0, 0, 0);
     padding: 14px 20px;
     margin: 8px 0;
@@ -53,5 +63,14 @@ input[type="submit"] {
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
     font-style: normal;
+    font-size: 15px;
     text-align: center;
+    color: white;
+}
+
+input[type="submit"]:hover, button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,255,255,0.5);
+    border-style: dashed;
+    border-color: rgba(0, 255, 255, 0.329);
 }
